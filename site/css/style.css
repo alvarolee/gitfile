@@ -1,0 +1,437 @@
+*{
+	margin:0;
+	padding: 0
+}
+
+
+html,body{
+	font-family:"微软雅黑"；
+}
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+input{
+	outline:none;
+	border:none;
+}
+
+.clear{
+	clear: both;
+}
+
+.wrapperbox{
+	width:100%;
+	
+}
+.navbox{
+	width:100%;
+	height:40px;
+	background:#00848a;
+
+}
+.navbar{
+	width:1400px;
+	min-width:1400px;
+	margin:0 auto;
+
+}
+.navbar .logo{
+	width:34px;
+	height:31px;
+	float:left;
+}
+.logo img{
+	margin-top:5px;
+}
+
+.navbar nav{
+	float:right;
+}
+
+.navbar nav ul li{
+	float:left;
+}
+
+.navbar nav li a{
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	padding:0 10px;
+	color: #fff;
+
+}
+
+.navbar nav li a:hover{
+	color:#00848a;
+	background:#fff;
+}
+
+/*banner条*/
+.bannerbox{
+	width:100%;
+	height:640px;
+	overflow:hidden;
+	position:relative;
+}
+
+.bannerbox li .img{
+	display:none;
+	width:100%;
+	height:640px;
+}
+
+.bannerbox li .current{
+	display:block;
+}
+
+.bannerbox .dots{
+	position:absolute;
+	width:100px;
+	bottom:60px;
+	left:50%;
+	margin-left:-50px;
+}
+
+.bannerbox .dots>span{
+	display:inline-block;
+	width:11px;
+	height:11px;
+	background:#fff;
+	border-radius: 15px;
+	cursor:pointer;
+	box-sizing:border-box;
+}
+
+.bannerbox .dots>span:not(:last-child){
+	margin-left:5px;
+}
+
+.bannerbox .dots>span.square{
+	background:#00848a;
+}
+
+/* 搜索框 */
+.searchbox{
+	width:975px;
+	height:68px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+	margin-top:-30px;
+	border-radius:5px;
+	box-shadow:0 0 2px 0 #ccc;
+}
+
+.searchbox form input{
+	width:907px;
+	height:68px;
+	float:left;
+	text-indent:20px;
+	border-radius:5px;
+}
+
+.searchbox form input[type="submit"]{
+	display:inline-blocsk;
+	width:68px;
+	height:68px;
+	background:url(../img/icon/searchicon.png) no-repeat center;
+	animation:bounce 0.75s infinite alternate;
+}
+
+/*bounce 跳动动画*/
+@keyframes bounce{
+	0%{
+		transform: translate3d(0,0,0);
+	}
+
+	100%{
+		transform: translate3d(0,-8px,0);
+	}
+}
+
+/*特惠房源*/
+
+.oddsbox{
+	width:1400px;
+	margin:30px auto 60px auto;
+}
+
+/*标题*/
+.oddsbox .title p,.wantgobox .title p,.ensurebox .title p{
+	width:200px;
+	height:40px;
+	line-height: 40px;
+	text-align:center;
+	background:#00848a;
+	color:#fff;
+	font-size:22px;
+	float: left;
+}
+
+.oddsbox .title span,.wantgobox .title span,.ensurebox .title span{
+	font-size:22px;
+	display:inline-block;
+	float: left;
+	line-height: 40px;
+	height: 40px;
+	padding-left: 10px;
+	color: #00848a;
+}
+
+.oddsbox .title span i{
+	display: inline-block;
+	font-style: normal;
+	padding:0 5px;
+	animation:bounce 0.75s infinite alternate;
+}
+
+.content{
+	clear:left;
+	height:760px;
+	padding-top: 40px;
+}
+
+.content .list .list_nav{
+	display:inline-block;
+	width: 100px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 #ccc;
+	box-sizing: border-box;
+	margin-right: 80px;
+	cursor: pointer;
+}
+
+.content .list .list_nav:last-child{
+	margin-right:0px; 
+}
+
+.content .list .current_option{
+	background: #00848a;
+	color: #fff;
+}
+
+/*城市对应的房源信息*/
+.productbox{
+	width: 100%;
+	clear: both;
+	margin: 20px 0;
+	display: none;
+}
+
+.on{
+	display: block;
+}
+
+.infobox{
+	width: 340px;
+	height: 350px;
+	float: left;
+	margin: 20px 13px 0 0;
+}
+
+.infobox:nth-child(4){
+	margin-right: 0;
+}
+
+.infobox p:first-child{
+	width: 334px;
+	height: 222px;
+	border: 1px solid #fff;
+	overflow: hidden;
+	border-radius: 10px;
+
+}
+
+.infobox p:first-child img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: all 0.6s 0.4s;
+	-ms-transition:all 0.6s 0.4s;
+}
+
+.infobox p:first-child img:hover{
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform:scale(1.2);
+
+}
+
+.title{
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.infobox span{
+	font-size: 12px;
+}
+
+.infobox p s{
+	margin:0 5px;
+}
+
+.inofbox ul{
+	margin: 10px 0;
+}
+
+.infobox ul li{
+	float: left;
+	font-size: 12px;
+}
+
+.infobox ul li img{
+	margin-right: 15px;
+}
+
+/*你可能也想去*/
+.wantgobox{
+	width: 1400px;
+	height: 303px;
+	margin: 0 auto;
+}
+
+.wantgobox ul{
+	clear: both;
+	padding-top: 20px;
+}
+
+.wantgobox ul li{
+	width: 193px;
+	height: 241px;
+	float: left;
+	margin-right: 48px;
+	position: relative;
+}
+
+.wantgobox ul li:last-child{
+	margin-right: 0;
+}
+
+.wantgobox ul li img{
+	width: 193px;
+	height: 241px;
+}
+
+.wantgobox ul li p{
+	position: absolute;
+	left: 50%;
+	top: 144px;
+	margin-left: -59px;
+	z-index: 2;
+}
+
+.wantgobox ul li span{
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+/*透明层*/
+.wantgobox ul li .mark{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	z-index: 1;
+	opacity: 0;
+	transition:all ease-in-out 0.5s;
+	-ms-transition:all ease-in-out 0.5s;
+}
+
+.wantgobox ul li:hover .mark{
+	opacity: 1;
+}
+
+/*保障*/
+.ensurebox{
+	width: 1400px;
+	height: 200px;
+	margin: 40px auto;
+}
+
+.ensurelist dl{
+	float: left;
+	width: 450px;
+	margin:20px 25px 0 0;
+}
+
+.ensurelist dl:last-child{
+	margin-right: 0;
+}
+
+.ensurelist dl dt,.ensurelist dl dd{
+	float: left;
+}
+
+.ensurelist dl dt{
+	margin-right: 15px;
+}
+
+.enusrelist dl dd{
+	font-size: 18px;
+	line-height: 1.6;
+	width: 300px;
+}
+
+.ensurelist dl dt img{
+	animation: bounce 0.75s infinite alternate;
+}
+
+/*友情链接*/
+.listlinkbox{
+	width: 1400px;
+	height: 280px;
+	margin: 30px auto 50px auto;	
+}
+
+.listlinkbox dl{
+	float: left;
+	width: 350px;
+	line-height: 1.6;
+}
+
+.listlinkbox dl dt{
+	margin: 0 0 20px 0;
+	color:#00848a;
+}
+
+.copybox{
+	text-align: center;
+}
+
+/*动画*/
+.navBox nav ul li:hover a{
+    /*设置相对定位是为了设置a的显示层级，否则会被hover时的背景色遮住*/
+    position:relative;
+    z-index:2;
+    color: #00848A;
+}
+/*设置显示的背景色的样式和动画*/
+.navBox nav ul li .btnbg-x {
+    position: absolute;
+    left: -1px;
+    width: 0;
+    top: -1px;
+    bottom: -1px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+/*设置当鼠标滑过或者是悬停在导航项上时的hover样式效果*/
+.navBox nav ul li:hover .btnbg-x {
+    width: 100%;
+    width: calc(100% + 2px);
+    background: #fff;
+    color: #00848A;
+}
